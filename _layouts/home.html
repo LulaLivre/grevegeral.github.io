@@ -12,10 +12,19 @@
       </div>
       <hr class="section-separator">
       <div class="section" id="links-section">
-        {% for page in site.pages %}
-          {% if page.home %}
-            <a href="{{site.baseurl}}{{ page.url }}" class="link-item">
-              <h2>{{ page.title }}</h2>
+        {% for mpage in site.pages %}
+          {% if mpage.home %}
+            {% assign slug = mpage.url | downcase | replace: '/', '' %}
+            {% assign image = site.baseurl | append: '/assets/covers/01-DireitoPrevidenciario.jpg' %}
+            {% for file in site.static_files %}
+              {% if file.path contains slug and file.extname == '.jpg' %}
+                {% assign image = site.baseurl | append: file.path %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            <a href="{{ site.baseurl }}{{ mpage.url }}" class="link-item">
+              <img src="{{ image }}">
+              <h2>{{ mpage.title }}</h2>
             </a>
           {% endif %}
         {% endfor %}

@@ -57,22 +57,26 @@ hr.section-separator {
     margin: 0;
   }
 
+  img {
+    width: 100%;
+  }
+
   .link-item {
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
 
     width: 30%;
-    padding: 10.5vw 0;
-    border: 0.5vw solid $TEXT-COLOR;
     transition: $TRANSITION-PERIOD linear;
   }
 
   .link-item:hover {
-    border: 0.5vw solid $LINK-COLOR-HOVER;
+    opacity: 0.5;
   }
 }
 
@@ -83,6 +87,7 @@ hr.section-separator {
   h2 {
     margin: 0 0 $RESPONSIVE-SPACING;
   }
+
   .map-wrapper {
     display: block;
     margin: 0 auto $RESPONSIVE-SPACING;
