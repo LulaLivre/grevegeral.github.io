@@ -14,6 +14,7 @@
 
       <div id="list-container">
         {% assign slug = page.title | downcase %}
+        {% assign link-class = slug | append: '-link' %}
         {% for pdfFile in site.static_files %}
           {% if pdfFile.path contains slug %}
             {% assign image = site.baseurl | append: '/assets/covers/grevegeral_sq.jpg' %}
@@ -23,7 +24,7 @@
               {% endif %}
             {% endfor %}
 
-            <a href="{{ site.baseurl }}{{ pdfFile.path }}" target="_blank">
+            <a class="{{ link-class }}" href="{{ site.baseurl }}{{ pdfFile.path }}" target="_blank">
               <img src="{{ image }}">
             </a>
           {% endif %}

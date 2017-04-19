@@ -142,12 +142,19 @@ hr.section-separator {
   a:hover {
     opacity: 0.4;
   }
+  a.memes-link:hover {
+    opacity: 1;
+  }
 
   img {
     width: 100%;
     filter: url(filters.svg#grayscale);
     -webkit-filter: brightness(150%) contrast(2000%) grayscale(100%);
     filter: brightness(150%) contrast(2000%) grayscale(100%);
+    transition: filter $TRANSITION-PERIOD linear;
+  }
+  img:hover {
+    filter: none;
   }
 
   h2 {
