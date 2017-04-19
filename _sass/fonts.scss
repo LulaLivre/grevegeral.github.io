@@ -72,6 +72,9 @@ $text-size: 1.1rem;
     h2 {
       font-size: 14vw;
     }
+    h3 {
+      font-size: 8vw;
+    }
   }
 
   #links-section {
@@ -99,6 +102,10 @@ $text-size: 1.1rem;
         font-size: 2vw;
       }
     }
+  }
+
+  #content-section {
+    text-align: left;
   }
 
   #list-container {

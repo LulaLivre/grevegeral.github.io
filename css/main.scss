@@ -36,7 +36,7 @@ hr.section-separator {
   display: block;
   padding: $RESPONSIVE-SPACING 0 0;
 
-  h2 {
+  h2, h3 {
     margin: 0;
   }
 }
@@ -104,6 +104,12 @@ hr.section-separator {
   p {
     margin: 0 0 $RESPONSIVE-SPACING;
   }
+}
+
+#content-section {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #list-container {

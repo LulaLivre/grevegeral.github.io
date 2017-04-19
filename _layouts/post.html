@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    {% include meta.html %}
+  </head>
+  <body>
+    <div id="main-div">
+      <div class="section" id="title-section">
+        <h2>{{ site.title }}</h2>
+        <h3>{{ page.title }}</h3>
+      </div>
+      <hr class="section-separator">
+      <div class="section" id="content-section">
+        {{ page.content }}
+      </div>
+    </div>
+  </body>
+</html>
