@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    {% include meta.html %}
+  </head>
+  <body>
+    <div id="main-div">
+      <div class="section" id="title-section">
+        <a href="{{ site.baseurl }}/"><h2>{{ site.title }}</h2></a>
+        <h2>{{ page.title }}</h2>
+      </div>
+      <hr class="section-separator">
+
+      <div id="list-container">
+        {% assign slug = page.title | downcase %}
+        {% for post in site.posts %}
+          {% if post.category contains slug %}
+            {% if post.cover %}
+              {% assign image = site.baseurl | append: post.cover %}
+            {% else %}
+              {% assign image = site.baseurl | append: '/assets/covers/grevegeral_sq.jpg' %}
+            {% endif %}
+            <a class="list-item-image" href="{{ site.baseurl }}{{ post.url }}">
+              <img src="{{ image }}">
+              <h2>{{ post.title }}</h2>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
