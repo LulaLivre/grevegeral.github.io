@@ -1,0 +1,31 @@
+$BACKGROUND-COLOR: rgba(255,255,255,1);
+
+$TEXT-COLOR: rgba(51,51,51,1);
+
+$LINK-COLOR: $TEXT-COLOR;
+$LINK-COLOR-VISITED: $LINK-COLOR;
+$LINK-COLOR-HOVER: lighten($LINK-COLOR, 50%);
+
+$DESKTOP-WIDTH-SITE: 1280px;
+$COLUMN-WIDTH: 3*$DESKTOP-WIDTH-SITE/8;
+$COLUMN-HORIZONTAL-BORDER: 10px;
+
+$RESPONSIVE-SPACING: 2vw;
+
+$TRANSITION-PERIOD: 0.1s;
+
+$one_column: ($DESKTOP-WIDTH-SITE/2) + (2 * $COLUMN-HORIZONTAL-BORDER);
+$two_columns: (2 * $COLUMN-WIDTH) + (2 * $COLUMN-HORIZONTAL-BORDER);
+$three_columns: (3 * $COLUMN-WIDTH) + (2 * $COLUMN-HORIZONTAL-BORDER);
+
+@mixin media-query($canvas) {
+  @if $canvas == ONE {
+   @media only screen and (min-width: $one_column) { @content; }
+  }
+  @else if $canvas == TWO {
+   @media only screen and (min-width: $two_columns) { @content; }
+  }
+  @else if $canvas == THREE {
+   @media only screen and (min-width: $three_columns) { @content; }
+  }
+}

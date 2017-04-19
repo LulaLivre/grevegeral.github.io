@@ -1,0 +1,24 @@
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{site.social.twitter_user}}">
+<meta name="twitter:title" content="{{page.title}}">
+<meta name="twitter:description" content="{{site.title}} - {{page.title}}">
+<meta name="twitter:creator" content="{{site.social.twitter_user}}">
+
+<meta property="og:title" content="{{page.title}}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{site.url}}{{site.baseurl}}{{page.url}}">
+<meta property="og:description" content="{{site.title}} - {{page.title}}">
+<meta property="og:site_name" content="{{site.title}}">
+<meta property="article:publisher" content="{{site.social.facebook_url}}">
+
+{% assign cover = site.url | append: site.baseurl | append: '/assets/covers/grevegeral.jpg' %}
+{% if page.cover %}
+  {% for image in site.jpg_files %}
+    {% if image.path contains page.cover %}
+      {% assign cover = site.url | append: image.path %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<meta name="twitter:image" content="{{ cover }}">
+<meta property="og:image" content="{{ cover }}">

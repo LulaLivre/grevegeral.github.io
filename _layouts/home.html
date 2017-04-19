@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    {% include meta.html %}
+  </head>
+  <body>
+    <div id="main-div">
+      <div class="section" id="title-section">
+        <h2>{{ page.title }}</h2>
+        <h2>28 / 04 / 2017</h2>
+      </div>
+      <hr class="section-separator">
+      <div class="section" id="links-section">
+        {% for page in site.pages %}
+          {% if page.home %}
+            <a href="{{site.baseurl}}{{ page.url }}" class="link-item">
+              <h2>{{ page.title }}</h2>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <hr class="section-separator">
+      <div class="section" id="map-section">
+        <h2>Encontre o evento mais próximo de você e participe</h2>
+        <div class="map-wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15874155.786724493!2d-55.32830872607423!3d-13.747103888429269!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1492491172976" width=100% height=100% frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <hr class="section-separator">
+      <div class="section" id="contact-section">
+        <h2>Quem Somos</h2>
+        <p>{{ page.content }}</p>
+        <h2>Colabore</h2>
+      </div>
+    </div>
+  </body>
+</html>

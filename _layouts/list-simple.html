@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    {% include meta.html %}
+  </head>
+  <body>
+    <div id="main-div">
+      <div class="section" id="title-section">
+        <a href="{{ site.baseurl }}/"><h2>{{ site.title }}</h2></a>
+        <h2>{{ page.title }}</h2>
+      </div>
+      <hr class="section-separator">
+
+      <div id="list-container">
+        {% assign slug = page.title | downcase %}
+        {% for pdfFile in site.static_files %}
+          {% if pdfFile.path contains slug %}
+            {% assign image = site.baseurl | append: '/assets/covers/grevegeral_sq.jpg' %}
+            {% for jpgFile in site.static_files %}
+              {% if jpgFile.basename == pdfFile.basename and jpgFile.extname == '.jpg' %}
+                {% assign image = site.baseurl | append: jpgFile.path %}
+              {% endif %}
+            {% endfor %}
+
+            <a class="list-item-image" href="{{ site.baseurl }}{{ pdfFile.path }}" target="_blank">
+              <img src="{{ image }}">
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

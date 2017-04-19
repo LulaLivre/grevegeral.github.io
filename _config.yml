@@ -1,0 +1,18 @@
+# Site
+title: Greve Geral
+
+# URL
+url: http://grevegeral.org
+baseurl: /grevegeral.org
+permalink: :title/
+include: ['_pages']
+
+# Build settings
+markdown: kramdown
+port: 4567
+
+# Data
+social:
+  facebook_url: "https://www.facebook.com/GG"
+  twitter_url: "https://twitter.com/gg"
+  twitter_user: "@gg"

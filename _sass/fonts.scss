@@ -1,0 +1,103 @@
+@import 'constants';
+@import 'myfont';
+
+$family-sans: 'myFont', 'Arial';
+$text-size: 1.1rem;
+
+@mixin fonts {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-size: 14px;
+    @include media-query(THREE) { 
+      font-size: 20px;
+    }
+  }
+
+  body {
+    font: normal $text-size $family-sans;
+    color: $TEXT-COLOR;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.17rem; }
+  h4 { font-size: 1.12rem; }
+  h5 { font-size: .83rem; }
+  h6 { font-size: .75rem; }
+
+  p {
+    font: normal $text-size $family-sans;
+    word-spacing: 4px;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  s {
+    text-decoration:line-through;
+  }
+
+  a {
+    font: bold $text-size $family-sans;
+    font-weight: 900;
+    text-decoration: none;
+    color: $LINK-COLOR;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color $TRANSITION-PERIOD linear;
+
+    &:visited {
+      color: $LINK-COLOR-VISITED;
+    }
+
+    &:hover {
+      color: $LINK-COLOR-HOVER;
+    }
+  }
+
+  .section {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+  }
+
+  #title-section {
+    h2 {
+      font-size: 14vw;
+    }
+  }
+
+  #links-section {
+    h2 {
+      font-size: 4vw;
+    }
+  }
+
+  #map-section {
+    h2 {
+      font-size: 3.2vw;
+    }
+  }
+
+  #contact-section {
+    h2 {
+      font-size: 3.2vw;
+      text-align: left;
+    }
+    p {
+      text-align: left;
+      font-size: 2.5vw;
+
+      @include media-query(THREE) {
+        font-size: 2vw;
+      }
+    }
+  }
+}
