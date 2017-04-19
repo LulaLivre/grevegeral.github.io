@@ -1,5 +1,5 @@
 ---
-layout: list-simple
+layout: list
 title: Lambes
 permalink: '/lambes/'
 home: true
