@@ -3,7 +3,7 @@ title: Greve Geral
 
 # URL
 url: http://grevegeral.org
-baseurl: /grevegeral.org
+baseurl: 
 permalink: :title/
 include: ['_pages']
 
