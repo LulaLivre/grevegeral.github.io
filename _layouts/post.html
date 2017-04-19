@@ -7,12 +7,12 @@
   <body>
     <div id="main-div">
       <div class="section" id="title-section">
-        <h2>{{ site.title }}</h2>
+        <a href="{{ site.baseurl }}/"><h2>{{ site.title }}</h2></a>
         <h3>{{ page.title }}</h3>
       </div>
       <hr class="section-separator">
       <div class="section" id="content-section">
-        {{ page.content }}
+        <p>{{ page.content }}</p>
       </div>
     </div>
   </body>

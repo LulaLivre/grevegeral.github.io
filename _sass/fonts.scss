@@ -94,18 +94,19 @@ $text-size: 1.1rem;
       font-size: 3.2vw;
       text-align: left;
     }
-    p {
-      text-align: left;
-      font-size: 2.5vw;
-
-      @include media-query(THREE) {
-        font-size: 2vw;
-      }
-    }
   }
 
   #content-section {
     text-align: left;
+  }
+
+  #contact-section p, #content-section p {
+    text-align: left;
+    font-size: 2.5vw;
+
+    @include media-query(THREE) {
+      font-size: 2vw;
+    }
   }
 
   #list-container {
