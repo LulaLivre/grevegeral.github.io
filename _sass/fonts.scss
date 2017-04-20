@@ -96,6 +96,18 @@ $text-size: 1.1rem;
     }
   }
 
+  #social-section {
+    .social-item {
+      font-size: 2vw;
+      i {
+        font-size: 4vw;
+      }
+    }
+    .social-item:hover {
+      color: $TEXT-COLOR;
+    }
+  }
+
   #content-section {
     text-align: left;
   }

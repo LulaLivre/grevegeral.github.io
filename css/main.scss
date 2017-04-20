@@ -41,7 +41,7 @@ hr.section-separator {
   }
 }
 
-#links-section {
+#links-section, #social-section {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -79,6 +79,22 @@ hr.section-separator {
   .link-item:hover {
     opacity: 0.6;
   }
+
+  .social-item {
+    border: 3px solid $TEXT-COLOR;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px $LINK-COLOR-HOVER;
+    padding: $RESPONSIVE-SPACING/2 0;
+  }
+  .social-item:hover {
+    opacity: 1;
+    box-shadow: 4px 4px 5px $LINK-COLOR-HOVER;
+    color: $TEXT-COLOR;
+  }
+}
+
+#social-section {
+  padding: 0;
 }
 
 #map-section {
