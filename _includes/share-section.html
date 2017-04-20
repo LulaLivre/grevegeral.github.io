@@ -1,0 +1,11 @@
+{% assign thisURL = site.url | append: site.baseurl | append: page.url %}
+<div id="share-section">
+  <a title="Compartilhe no Facebook" target="_blank"
+     href="https://www.facebook.com/sharer/sharer.php?u={{ thisURL }}">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+  </a>
+  <a title="Compartilhe no Twitter" target="_blank"
+     href="https://twitter.com/share?url={{ thisURL }}">
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+  </a>
+</div>
