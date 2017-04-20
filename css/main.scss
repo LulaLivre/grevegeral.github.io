@@ -59,6 +59,10 @@ hr.section-separator {
 
   img {
     width: 100%;
+    filter: url(filters.svg#grayscale);
+    -webkit-filter: brightness(150%) contrast(2000%) grayscale(100%);
+    filter: brightness(150%) contrast(2000%) grayscale(100%);
+    transition: filter $TRANSITION-PERIOD linear;
   }
 
   .link-item {
@@ -76,7 +80,9 @@ hr.section-separator {
   }
 
   .link-item:hover {
-    opacity: 0.5;
+    img {
+      filter: none;
+    }
   }
 }
 
