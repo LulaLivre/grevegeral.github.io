@@ -24,6 +24,28 @@ body {
   padding: 0;
 }
 
+#share-section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+
+  position: fixed;
+  left: 0;
+  top: 2*$RESPONSIVE-SPACING;
+
+  background-color: $BACKGROUND-COLOR;
+  padding: $RESPONSIVE-SPACING/2 0;
+
+  a {
+    padding: 0;
+    padding-left: $RESPONSIVE-SPACING/2;
+  }
+  a+a{
+    padding-top: $RESPONSIVE-SPACING;
+  }
+}
+
 hr.section-separator {
   display: block;
   width: 90%;
