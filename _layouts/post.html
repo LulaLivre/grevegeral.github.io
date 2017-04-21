@@ -13,9 +13,14 @@
         <h3>{{ page.title }}</h3>
       </div>
       <hr class="section-separator">
+
+      {% include breadcrumbs.html %}
+
       <div class="section" id="content-section">
         <p>{{ page.content }}</p>
       </div>
+
+      {% include breadcrumbs.html %}
     </div>
   </body>
 </html>

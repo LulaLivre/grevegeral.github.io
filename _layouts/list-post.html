@@ -14,6 +14,8 @@
       </div>
       <hr class="section-separator">
 
+      {% include breadcrumbs.html %}
+
       <div id="list-container">
         {% assign slug = page.title | downcase %}
         {% for post in site.posts %}

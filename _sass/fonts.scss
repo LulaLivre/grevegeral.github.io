@@ -127,6 +127,16 @@ $text-size: 1.1rem;
     }
   }
 
+  #breadcrumbs {
+    h2, a {
+      font-size: 2vw;
+      text-transform: uppercase;
+    }
+    .breadcrumbs-separator {
+      font-size: 3vw;
+    }
+  }
+
   #list-container {
     h2 {
       text-align: center;

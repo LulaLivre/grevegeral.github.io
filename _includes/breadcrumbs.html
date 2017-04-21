@@ -1,0 +1,13 @@
+{% if page.layout == 'post' %}
+  <div id="breadcrumbs">
+    <h2>
+      <a href="{{ site.baseurl }}/">greve geral</a> <span class="breadcrumbs-separator">»</span>
+      <a href="{{ site.baseurl }}/acoes">ações</a> <span class="breadcrumbs-separator">»</span>
+      {{ page.title }}
+    </h2>
+  </div>
+{% else %}
+  <div id="breadcrumbs">
+    <h2><a href="{{ site.baseurl }}/">greve geral</a> <span class="breadcrumbs-separator">»</span> {{ page.title }}</h2>
+  </div>
+{% endif %}
