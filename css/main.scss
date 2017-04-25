@@ -177,7 +177,7 @@ hr.section-separator {
   justify-content: space-between;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  
+
   max-width: 90%;
   margin: $RESPONSIVE-SPACING auto 0;
 
@@ -225,4 +225,9 @@ hr.section-separator {
     width: 100%;
     height: 100%;
   }
+}
+
+#embed-twitter {
+  width: 552px;
+  margin: 20px auto;
 }
