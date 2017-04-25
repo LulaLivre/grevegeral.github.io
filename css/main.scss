@@ -158,6 +158,14 @@ hr.section-separator {
   img {
     width: 100%;
   }
+
+  .small-image {
+    margin: 1% 0;
+    @include media-query(TWO) {
+      width: 30%;
+      margin: 0 1%;
+    }
+  }
 }
 
 #breadcrumbs {
