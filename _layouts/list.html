@@ -18,16 +18,17 @@
 
       <div id="list-container">
         {% assign slug = page.title | downcase %}
-        {% for pdfFile in site.static_files %}
-          {% if pdfFile.path contains slug %}
+        {% assign coverTypes = ".jpg,.gif" | split: ',' %}
+
+        {% for rawFile in site.static_files %}
+          {% if rawFile.path contains slug %}
             {% assign image = site.baseurl | append: '/assets/covers/grevegeral_sq.jpg' %}
-            {% for jpgFile in site.static_files %}
-              {% if jpgFile.basename == pdfFile.basename and jpgFile.extname == '.jpg' %}
-                {% assign image = site.baseurl | append: jpgFile.path %}
+            {% for coverFile in site.static_files %}
+              {% if coverFile.basename == rawFile.basename and coverTypes contains coverFile.extname %}
+                {% assign image = site.baseurl | append: coverFile.path %}
               {% endif %}
             {% endfor %}
-
-            <a href="{{ site.baseurl }}{{ pdfFile.path }}" target="_blank">
+            <a href="{{ site.baseurl }}{{ rawFile.path }}" target="_blank">
               <img src="{{ image }}">
             </a>
           {% endif %}
