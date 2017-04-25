@@ -11,6 +11,8 @@ Multiplique esta intervenção e convoque sua cidade para a #GreveGeral.
 </div>
 
 ---
+**Brigada nacional de agitação e propaganda Carlos Marighella**
+
 **MANUAL DO LAMBE-LAMBE**  
 Os Lambes são cartazes com desenhos, figuras ou frases de agitação sobre nossas ações e pautas políticas que são colocados em diferentes espaços, principalmente em muros e madeirites pelas cidades. Na sua maioria são usados tamanho A3, mas eles podem ser bem pequenos, como também gigantes. Eles podem ser bem coloridos e artístico, atuando diretamente na luta das ideias.
 
