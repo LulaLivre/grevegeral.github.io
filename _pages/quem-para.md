@@ -2,7 +2,7 @@
 layout: post
 type: page
 title: 'Quem Participa'
-permalink: '/quem-para'
+permalink: '/quem-para/'
 description: 'Sindicatos e grupos que aderem à greve do dia 28 de Abril de 2017, contra as reformas da previdência e das leis trabalhistas.'
 keywords: 'sindicatos, grupos, greve, trabalhadores, trabalhadoras'
 ---
