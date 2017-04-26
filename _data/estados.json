@@ -133,6 +133,7 @@
     "Sintram – Sindicato das Empresas de Transporte de Passageiros Metropolitano",
     "STTR-BH (Sindicato Transporte trabalhador Rodoviário)",
     "SINPRO – Sindicato dos Professores de Minas Gerais",
+    "SINMEDMG - Sindicato dos Médicos de Minas Gerais",
     "SITESEMG – Sindicato dos Trabalhadores nas Entidades Sindicais do estado de MG",
     "SITRAMICO – Sindicato dos Trabalhadores no Comércio de Minérios e Derivados de Petróleo",
     "SINDIELETRO – Sindicato dos Trabalhadores na Indústria Energética de Minas Gerais",
@@ -176,7 +177,7 @@
     "Comerciários",
     "Construção civil",
     "Correios",
-    "Ferroviários",
+    "Ferroviários - CBTU",
     "Frentistas",
     "Motoristas e cobradores",
     "Policiais civis",
@@ -190,7 +191,11 @@
     "Trabalhadores da Fundac",
     "Trabalhadores da limpeza urbana",
     "Trabalhadores e trabalhadoras rurais",
-    "Urbanitários"
+    "Trabalhadores Urbanitários",
+    "Servidores Públicos Federais - PB",
+    "Defensores Públicos Federais - PB",
+    "Servidores do DATAPREV",
+    "Servidores do Detran "
   ],
   Paraná: [
     "APP - Sindicato (professores e servidores das escolas estaduais)",
@@ -271,6 +276,13 @@
     "Trabalhadores da limpeza urbana",
     "Trabalhadores rurais"
   ],
+  "Rio Grande do Sul": [
+    "SEMAPI - Sindicato dos Empregados em Empresas de Assessoramento e Perícia",
+    "SindBancários - Sindicato dos Bancários de Porto Alegre e Região",
+    "Sindimetrô-RS - Metroviários",
+    "SINPRO-RS - Sindicato dos Professores do Ensino Privado do RS",
+    "CPERS - Sindicato dos Professores e Funcionários de escola do Estado do Rio Grande do Sul"
+  ]
   Rondônia: [
     "Eletricitários (CERON, Eletrobras e Eletronorte)",
     "Bancários",
