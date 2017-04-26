@@ -14,9 +14,7 @@ keywords: 'sindicatos, grupos, greve, trabalhadores, trabalhadoras'
   • [CSB](http://csb.org.br/blog/2017/04/05/csb-convoca-sindicatos-trabalhadores-e-sociedade-para-paralisacoes-no-dia-28-de-abril/){:target="_blank"}
   • [NCST](http://www.ncst.org.br/subpage.php?id=19709_24-04-2017_ncst-intensifica-chamado-para-28-04){:target="_blank"}
   • [Conlutas](http://cspconlutas.org.br/2017/04/comites-de-base-preparam-greve-geral-do-dia-28-de-abril/){:target="_blank"}
-  • [CNTE](http://www.cnte.org.br/images/stories/2017/greve_geral_nacional_cartaz_final_web.jpg){:target="_blank"}
-  • [CNTTL](http://cnttl.org.br/noticia/7652/trabalhadores-em-transportes-da-cut-aprovam-paralisacao-de-ate-24-horas-nesta-sexta-feira-28){:target="_blank"}
-  • [](){:target="_blank"}
+  • 
 </div>
 
 <ul class="collapsible" data-collapsible="accordion" markdown="1">
