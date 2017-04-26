@@ -16,7 +16,6 @@ keywords: 'sindicatos, grupos, greve, trabalhadores, trabalhadoras'
   • [Conlutas](http://cspconlutas.org.br/2017/04/comites-de-base-preparam-greve-geral-do-dia-28-de-abril/){:target="_blank"}
   • [CNTE](http://www.cnte.org.br/images/stories/2017/greve_geral_nacional_cartaz_final_web.jpg){:target="_blank"}
   • [CNTTL](http://cnttl.org.br/noticia/7652/trabalhadores-em-transportes-da-cut-aprovam-paralisacao-de-ate-24-horas-nesta-sexta-feira-28){:target="_blank"}
-  • [SINTRAJUD](http://www.sintrajud.org.br/centrais-convocam-greve-geral-contra-reformas-da-previdencia-e-trabalhista/){:target="_blank"}
   • [](){:target="_blank"}
 </div>
 
