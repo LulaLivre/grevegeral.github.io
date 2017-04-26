@@ -45,7 +45,7 @@ $text-size: 1.1rem;
   }
 
   a {
-    font: bold $text-size $family-sans;
+    font-family: $family-sans;
     font-weight: 900;
     text-decoration: none;
     color: $LINK-COLOR;
@@ -59,6 +59,12 @@ $text-size: 1.1rem;
 
     &:hover {
       color: $LINK-COLOR-HOVER;
+    }
+  }
+
+  p {
+    a {
+      text-decoration: underline;
     }
   }
 
@@ -95,7 +101,7 @@ $text-size: 1.1rem;
     }
   }
 
-  #contact-section {
+  #contact-section, #participants-section {
     h2 {
       font-size: 3.2vw;
       text-align: left;
@@ -118,7 +124,7 @@ $text-size: 1.1rem;
     text-align: left;
   }
 
-  #contact-section a, #contact-section p, #content-section p {
+  #contact-section a, #contact-section p, #content-section p, #participants-section p {
     text-align: left;
     font-size: 2.5vw;
 
@@ -134,6 +140,9 @@ $text-size: 1.1rem;
     }
     .breadcrumbs-separator {
       font-size: 3vw;
+    }
+    a {
+      text-decoration: underline;
     }
   }
 
