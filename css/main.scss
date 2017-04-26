@@ -11,6 +11,10 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: $BACKGROUND-COLOR;
+
+  h2 {
+    font-weight: 900;
+  }
 }
 
 #main-div {
@@ -172,6 +176,21 @@ hr.section-separator {
   display: block;
   width: 90%;
   margin: 0 auto;
+}
+
+span.right {
+  float: right;
+}
+
+.collapsible-header {
+  transition: background-color $TRANSITION-PERIOD linear;
+}
+.collapsible-header:hover {
+  background-color: #ccc;
+}
+
+.collapsible-body {
+  padding: 1rem;
 }
 
 #list-container {

@@ -15,24 +15,23 @@ keywords: 'sindicatos, grupos, greve, trabalhadores, trabalhadoras'
   • [NCST](http://www.ncst.org.br/subpage.php?id=19709_24-04-2017_ncst-intensifica-chamado-para-28-04){:target="_blank"}
   • [Conlutas](http://cspconlutas.org.br/2017/04/comites-de-base-preparam-greve-geral-do-dia-28-de-abril/){:target="_blank"}
   • [CNTE](http://www.cnte.org.br/images/stories/2017/greve_geral_nacional_cartaz_final_web.jpg){:target="_blank"}
-  • [SINDASP](http://bit.ly/2q5aR0V){:target="_blank"}
-  • [SINTRAJUD](http://www.sintrajud.org.br/centrais-convocam-greve-geral-contra-reformas-da-previdencia-e-trabalhista/){:target="_blank"}
   • [CNTTL](http://cnttl.org.br/noticia/7652/trabalhadores-em-transportes-da-cut-aprovam-paralisacao-de-ate-24-horas-nesta-sexta-feira-28){:target="_blank"}
-  • [SINDPD](http://www.sindpd.org.br/sindpd/site/noticia.jsp?id=1492649194651){:target="_blank"}
-  • [SINPRO](http://www.sinprosp.org.br/noticias.asp?id_noticia=2678){:target="_blank"}
-  • [APEOESP](http://www.apeoesp.org.br/noticias/noticias-2017/jornada-de-lutas-dos-professores-as-rumo-a-greve-geral-28-de-abril-de-2017/){:target="_blank"}
-  • [SINPEEM](http://bit.ly/2q5dWxK){:target="_blank"}
-  • [ELETRICITÁRIOS](http://eletricitarios.org.br/file_upload/download/boletim_eletricitarios_vao_parar_tudo_em_28_de_abril_13_04_2017.pdf){:target="_blank"}
-  • [METALÚRGICOS](http://metalurgicos.org.br/noticias/noticias-do-sindicato/categorias-preparam-greve-contra-as-reformas/){:target="_blank"}
-  • [SINTAEMA](http://sintaemasp.org.br/wp-content/uploads/2017/04/panfleto_28_abril_greve_geral.pdf){:target="_blank"}
-  • [STU](http://www.stu.org.br/28-de-abril-vamos-parar-o-brasil/){:target="_blank"}
-  • [FETRAVESP](http://www.fetravesp.org.br/noticia.php?not=1460){:target="_blank"}
-  • [ASSOJUBS](http://www.assojubs.org.br/site/28-de-abril-vamos-parar-o-brasil/){:target="_blank"}
-  • [SEAAC](http://seaacabc.org.br/conteudo/greve-geral-no-dia-28-de-abril-contra-as-reformas-da-previdencia-e-trabalhista){:target="_blank"}
-  • [BANCÁRIOS-PE](http://www.bancariospe.org.br/noticias_aparece.asp?codigo=16571#.WQAhl1PyuRv){:target="_blank"}
-  • [METROVIÁRIOS](http://www.metroviarios.org.br/site/assembleia-aprova-greve-em-284/){:target="_blank"}
+  • [SINTRAJUD](http://www.sintrajud.org.br/centrais-convocam-greve-geral-contra-reformas-da-previdencia-e-trabalhista/){:target="_blank"}
   • [](){:target="_blank"}
 </div>
+
+<ul class="collapsible" data-collapsible="accordion" markdown="1">
+{% for state in site.data.estados[0] %}
+  <li>
+    <div class="collapsible-header">{{ state[0] }}<span class="right">▼</span></div>
+    <div class="collapsible-body">
+      {% for sin in state[1] %}
+        <p>{{ sin }}</p>
+      {% endfor %}
+    </div>
+  </li>
+{% endfor %}
+</ul>
 
 ---
 <div class="video-wrapper video-wrapper-16x9">
