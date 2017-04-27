@@ -6,7 +6,7 @@ permalink: '/quem-participa/'
 description: 'Sindicatos e grupos que aderem à greve do dia 28 de Abril de 2017, contra as reformas da previdência e das leis trabalhistas.'
 keywords: 'sindicatos, grupos, greve, trabalhadores, trabalhadoras'
 ---
-<div markdown="1">
+<div class="list-sindicatos" markdown="1">
   • [CUT](http://cut.org.br/noticias/cut-divulga-materiais-sobre-reformas-que-destroem-direitos-trabalhistas-7431/){:target="_blank"}
   • [CTB](http://ctb.org.br/site/especial-abril-de-lutas){:target="_blank"}
   • [UGT](http://www.ugt.org.br/index.php/post/16347-Nenhum-direito-a-menos){:target="_blank"}
@@ -30,6 +30,7 @@ keywords: 'sindicatos, grupos, greve, trabalhadores, trabalhadoras'
 {% endfor %}
 </ul>
 
+<!--
 ---
 <div class="video-wrapper video-wrapper-16x9">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZuBSaXHahxc" frameborder="0" allowfullscreen></iframe>
@@ -44,3 +45,4 @@ keywords: 'sindicatos, grupos, greve, trabalhadores, trabalhadoras'
   <img class="small-image" src="http://spbancarios.com.br/sites/default/files/styles/destaque_full/public/destaques/site-dia-28.png">
   <img class="small-image" src="http://i.imgur.com/RXzjh46.png">
 </div>
+-->
