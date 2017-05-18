@@ -4,6 +4,9 @@
     {% include head.html %}
     {% include meta.html %}
     {% include analytics.html %}
+    {% if page.url contains "gerador-de-lambe" %}
+      {% include head-gerador.html %}
+    {% endif %}
   </head>
   <body>
     <div id="main-div">
