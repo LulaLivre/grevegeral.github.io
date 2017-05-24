@@ -138,6 +138,7 @@ function drawText(canvas, line) {
   var words = line.split("\n");
   var yPos = textPadding;
   for(var i=0; i<words.length; i++) {
+    var leftPos = textPadding;
     words[i] = words[i].toUpperCase();
 
     mTextSize = MAX_FONT_SIZE;
@@ -147,9 +148,13 @@ function drawText(canvas, line) {
       textSize(mTextSize);
     }
 
+    if(textWidth(words[i]) < width-3*textPadding) {
+      leftPos = (width-3*textPadding-textWidth(words[i]))/2;
+    }
+
     tempTextcanvas.fill(0);
     tempTextcanvas.textSize(mTextSize);
-    tempTextcanvas.text(words[i], textPadding, yPos+ACCENT_CORRECTION*mTextSize);
+    tempTextcanvas.text(words[i], leftPos, yPos+ACCENT_CORRECTION*mTextSize);
 
     yPos += mTextSize;
   }
