@@ -17,6 +17,8 @@ var mFont;
 var textArea;
 var textCanvas, tempTextcanvas, backgroundCanvas;
 
+var hasTitle;
+
 function preload() {
   mFont = loadFont("/js/MyFont-Bold.otf");
 }
@@ -62,14 +64,15 @@ function draw() {
   var cPhrase = document.getElementById("lambeTexto").value;
   var cTitle = document.getElementById("lambeTitulo").value;
 
-  if(cPhrase != mPhrase) {
+  hasTitle = (cTitle.length > 0);
+
+  if((cPhrase != mPhrase) || (cTitle != mTitle)){
     mPhrase = cPhrase;
-    drawText(textCanvas, breakText(mPhrase, 4));
-  }
-  if (cTitle != mTitle) {
     mTitle = cTitle;
+    backgroundCanvas.clear();
     drawFrame(backgroundCanvas);
     drawSubtitle(backgroundCanvas, mTitle);
+    drawText(textCanvas, breakText(mPhrase, 4));
   }
 
   image(textCanvas, 0, 0);
@@ -161,6 +164,9 @@ function drawText(canvas, line) {
   yPos += textPadding;
 
   var heightScaleRatio = (6.0 * height / 7.0) / yPos;
+  if(!hasTitle) {
+    heightScaleRatio = (6.9 * height / 7.0) / yPos;
+  }
 
   canvas.smooth();
   canvas.background(0,0);
@@ -207,13 +213,15 @@ function drawSubtitle(canvas, subtitle) {
   canvas.textSize(mTextSize);
   var heightScaleRatio = RECT_SIZE.y/mTextSize;
 
-  canvas.push();
-  canvas.translate(RECT_POS.x, RECT_POS.y);
-  canvas.rect(0, 0, RECT_SIZE.x, RECT_SIZE.y);
-  canvas.fill(255);
-  canvas.push();
-  canvas.scale(1,heightScaleRatio);
-  canvas.text(subtitle, 0, 0);
-  canvas.pop();
-  canvas.pop();
+  if(hasTitle) {
+    canvas.push();
+    canvas.translate(RECT_POS.x, RECT_POS.y);
+    canvas.rect(0, 0, RECT_SIZE.x, RECT_SIZE.y);
+    canvas.fill(255);
+    canvas.push();
+    canvas.scale(1,heightScaleRatio);
+    canvas.text(subtitle, 0, 0);
+    canvas.pop();
+    canvas.pop();
+  }
 }
