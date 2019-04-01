@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Greve Geral
+title: Lula Livre 
 permalink: '/'
-description: 'Contra as reformas da previdência e das leis trabalhistas.'
+description: 'Jornada Lula Livre. Comitês Lula Livre.'
 keywords: ''
 ---
