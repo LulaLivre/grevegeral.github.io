@@ -1,6 +1,6 @@
 ---
 layout: home
-title: #LulaLivre 
+title: '#LulaLivre' 
 permalink: '/'
 description: 'Jornada Lula Livre. Comitês Lula Livre.'
 keywords: ''
